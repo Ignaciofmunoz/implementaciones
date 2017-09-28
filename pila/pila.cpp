@@ -42,7 +42,11 @@ void descargar_pila(pila&p)
     cin>>npops;
     if (npops>N)
     {
-        npops=N;
+       npops=N;
+       cout<<"se sobrepaso el maximo de elementos posibles"<<endl;
+        cout<<"se extraeran "<<npops<<" elementos"<<endl;
+        
+       npops=N;
     }
      cout<<"elementos retirados:"<<endl;
     for (int i=0; i<npops; i++)
