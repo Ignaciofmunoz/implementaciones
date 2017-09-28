@@ -2,12 +2,12 @@
 #include <array>
 using namespace std;
 
-
+const int N=3;
 struct pila
 {
 array<int ,5>a;
    int i=0;
-};
+}p;
 pila p;
 void push (pila&p,int x)
 {
@@ -21,11 +21,11 @@ int pop (pila&p)
     return p.a.at(p.i);
 }
 
-void cargar_pila()
+void cargar_pila(pila&p)
 {
 
-    cout<<"ingrese 5 numeros "<<endl;
-    for (int i=0;i<5;i++)
+    cout<<"ingrese "<<N<<" numeros "<<endl;
+    for (int i=0;i<N;i++)
     {
         int num;
         cin >>num;
@@ -33,35 +33,40 @@ void cargar_pila()
     }
 }
 int npops;
-void descargar_pila()
+void descargar_pila(pila&p)
 {
 
-cout<<endl<<"ingrese cuantos elementos desea quitar (maximo=5)"<<endl;
-cin>>npops;
 
-for (int i=1;i<=npops;i++)
+    cout<<"ingrese cuantos elementos desea quitar ,maximo="<<N<<endl;
+
+    cin>>npops;
+    if (npops>N)
+    {
+        npops=N;
+    }
+     cout<<"elementos retirados:"<<endl;
+    for (int i=0; i<npops; i++)
     {
         int a;
         a=pop(p);
-
+       cout<<a<<endl;
     }
-
 }
 void mostrar_pila(pila&p)
 {
-    for (int i=0;i<5;i++)
+   cout<<"elementos en pila :"<<endl;
+    for (int i=0;i<(p.i);i++)
         {
-        cout<<"------------------"<<endl;
-        cout<<"elemento:"<<i<<endl;
+   
         cout<<p.a.at(i)<<endl;
 }
 }
 int main()
 {
 
-cargar_pila();
+cargar_pila(p);
 mostrar_pila(p);
-descargar_pila();
+descargar_pila(p);
 mostrar_pila(p);
 return 0;
 }
