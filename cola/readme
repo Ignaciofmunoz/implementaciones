@@ -1,1 +1,7 @@
 
+implementacion del tipo de estructura cola (FIFO):
+
+se creara una cola de N elementos , se solicitara al usuario que ingrese cada elemento individualmente 
+y se le mostrara la cola dada luego de cargarla.
+para demostrar como funciona  se quitaran la cantidad de elementos que el usuario indique y se le mostrara
+como queda la cola luego de la extraccion.
