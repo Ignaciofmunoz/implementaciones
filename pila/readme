@@ -1,1 +1,6 @@
+implementacion del tipo dato pila:
 
+se creara una pila de N elementos , se solicitara al usuario que ingrese cada elemento individualmente 
+y se le mostrara la lista dada luego de cargarla.
+para demostrar como funciona  se quitaran la cantidad de elementos que el usuario indique y se le mostrara
+como queda la pila luego de la extraccion.
