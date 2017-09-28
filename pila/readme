@@ -1,4 +1,4 @@
-implementacion del tipo dato pila:
+implementacion del tipo de estructura pila (LIFO):
 
 se creara una pila de N elementos , se solicitara al usuario que ingrese cada elemento individualmente 
 y se le mostrara la lista dada luego de cargarla.
