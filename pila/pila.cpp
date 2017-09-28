@@ -8,7 +8,7 @@ struct pila
 array<int ,5>a;
    int i=0;
 }p;
-pila p;
+
 void push (pila&p,int x)
 {
     p.a.at(p.i)=x;
